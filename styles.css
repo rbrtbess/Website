@@ -135,6 +135,45 @@ main li {
   box-shadow: 0 12px 24px rgba(127, 140, 255, 0.25);
 }
 
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #10121a;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-button:hover,
+.contact-button:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(127, 140, 255, 0.25);
+}
+
+.contact-button.secondary {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--panel-border);
+}
+
+.contact-button.secondary:hover,
+.contact-button.secondary:focus-visible {
+  color: var(--accent);
+  box-shadow: none;
+}
+
 footer {
   background: var(--panel-bg);
   border-top: 1px solid var(--panel-border);
@@ -155,3 +194,7 @@ footer {
     width: 100%;
   }
 }
+
+  }
+}
+
